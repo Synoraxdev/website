@@ -43,8 +43,8 @@ export const siteConfig = {
   themeColor: "#000000",
   robots: "index, follow, max-image-preview:large",
 
-  /** Routes included in sitemap.xml (homepage only for this phase). */
-  routes: ["/"],
+  /** Routes included in sitemap.xml. */
+  routes: ["/", "/bot-hosting/"],
 
   /** Optional path to a full logo image in /public to replace the built-in logo. Empty = built-in logo. */
   logo: "",

@@ -13,7 +13,7 @@ export type PageMeta = {
   path: string;
   title: string;
   description: string;
-  /** false = noindex (e.g. coming-soon pages). */
+  /** false = noindex (e.g. placeholder pages). */
   indexable: boolean;
 };
 
@@ -28,20 +28,12 @@ export const pages: PageMeta[] = [
   {
     id: "botHosting",
     path: "/bot-hosting/",
-    title: "Bot Hosting - Coming Soon | HozvikCloud",
-    description: "Bot Hosting from HozvikCloud is coming soon.",
-    indexable: false,
+    title: "Bot Hosting from ₹15/mo | HozvikCloud",
+    description:
+      "Bot hosting from HozvikCloud: NVMe storage, unlimited CPU, DDoS protection and 24/7 uptime. Deploy from GitHub, an archive or a template.",
+    indexable: true,
   },
 ];
-
-/** Content of the Bot Hosting placeholder page. */
-export const botHostingPage = {
-  eyebrow: "Products · Bot Hosting",
-  title: { before: "Bot Hosting is ", highlight: "coming soon", after: "." },
-  description: "We are getting Bot Hosting ready. Please check back shortly.",
-  homeLabel: "Back to Overview",
-  discordLabel: "Get updates on Discord",
-};
 
 /** "/bot-hosting", "/bot-hosting/" and "/bot-hosting/index.html" all resolve to the same page. */
 export function resolvePage(pathname: string): PageMeta {

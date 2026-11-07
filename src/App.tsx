@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import { ComingSoon } from "./components/ComingSoon";
+import { BotHosting } from "./components/BotHosting";
 import { Community } from "./components/Community";
 import { FAQ } from "./components/FAQ";
 import { Features } from "./components/Features";
@@ -25,7 +25,7 @@ export default function App({ path = "/" }: { path?: string }) {
       <Header current={page.id} />
       <main id="main">
         {page.id === "botHosting" ? (
-          <ComingSoon />
+          <BotHosting />
         ) : (
           <>
             <Hero />
