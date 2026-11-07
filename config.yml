@@ -1,0 +1,22 @@
+# ---------------------------------------------------------------------------
+# HozvikCloud site settings
+#
+# Put your links here. Leave a value empty ("") and that button/link is hidden.
+# Links open in a new tab. After editing, restart `npm run dev` or rebuild.
+#
+# You can also set these on Vercel (Project > Settings > Environment Variables).
+# An environment variable overrides the value in this file:
+#   VITE_DISCORD_URL, VITE_CLIENT_PANEL_URL, VITE_GAME_PANEL_URL, VITE_BILLING_PANEL_URL
+# ---------------------------------------------------------------------------
+
+discord: ""        # e.g. "https://discord.gg/yourInvite"
+clientPanel: ""
+gamePanel: ""
+billingPanel: ""
+
+# Footer contact email (shown only in the footer)
+contactEmail: ""   # e.g. "contact@hozvikcloud.de"
+
+# Public website URL, used for link previews (Discord, X, Google) and the sitemap.
+# Leave empty to use the Vercel domain automatically; set it once your own domain is live.
+siteUrl: ""        # e.g. "https://hozvikcloud.de"
